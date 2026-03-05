@@ -55,6 +55,20 @@ export interface Benefit {
   description: string;
 }
 
+export interface MethodStep {
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface Commitment {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
 export const domains: Domain[] = [
   {
     id: 'droit-du-travail',
