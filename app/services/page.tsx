@@ -31,7 +31,7 @@ const getServiceImage = (serviceId: string): string => {
 };
 
 export default function ServicesPage() {
-  const [activeService, setActiveService] = useState<string>(services[0].id);
+  const [activeService, setActiveService] = useState<string>(domains[0].id);
 
   // Observer pour détecter quelle section est visible
   useEffect(() => {
@@ -149,7 +149,7 @@ export default function ServicesPage() {
 
           {/* Boutons sur desktop */}
           <nav className="hidden md:flex flex-wrap justify-center gap-2 md:gap-4 py-4 overflow-x-auto" aria-label="Navigation des services">
-            {services.map((service) => (
+            {domains.map((service) => (
               <button
                 key={service.id}
                 onClick={() => scrollToService(service.id)}
