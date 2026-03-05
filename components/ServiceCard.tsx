@@ -1,9 +1,9 @@
 import Card from './Card';
 import Icon from './Icon';
-import { Service } from '@/lib/content';
+import { Domain } from '@/lib/content';
 
 interface ServiceCardProps {
-  service: Service;
+  service: Domain;
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
