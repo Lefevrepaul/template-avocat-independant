@@ -9,7 +9,7 @@ import Badge from '@/components/Badge';
 import CTAButton from '@/components/CTAButton';
 import FAQAccordion from '@/components/FAQAccordion';
 import Icon from '@/components/Icon';
-import { services, benefits, faqs } from '@/lib/content';
+import { domains, faqs } from '@/lib/content';
 
 // Icône SVG Check
 const CheckIcon = () => (
@@ -37,7 +37,7 @@ export default function ServicesPage() {
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
     
-    services.forEach((service) => {
+    domains.forEach((service) => {
       const element = document.getElementById(service.id);
       if (element) {
         const observer = new IntersectionObserver(
@@ -139,7 +139,7 @@ export default function ServicesPage() {
               style={{ backgroundPosition: 'right 0.5rem center' }}
               aria-label="Sélectionner un service"
             >
-              {services.map((service) => (
+              {domains.map((service) => (
                 <option key={service.id} value={service.id}>
                   {service.title}
                 </option>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
       </div>
 
       {/* 3. SECTIONS DES SERVICES */}
-      {services.map((service, index) => (
+      {domains.map((service, index) => (
         <section
           key={service.id}
           id={service.id}
@@ -252,26 +252,6 @@ export default function ServicesPage() {
                   </div>
                 )}
 
-                {/* Bénéfices */}
-                {service.benefits && service.benefits.length > 0 && (
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                      Les bénéfices pour vous
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {service.benefits.map((benefit, i) => (
-                        <div key={i} className="flex items-center">
-                          <span className="text-primary-600 dark:text-primary-400 mr-3 flex-shrink-0">
-                            <CheckIcon />
-                          </span>
-                          <span className="text-gray-700 dark:text-gray-300">
-                            {benefit}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 {/* CTA pour ce service */}
                 <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -285,28 +265,6 @@ export default function ServicesPage() {
         </section>
       ))}
 
-      {/* 4. CE QUE VOUS OBTENEZ */}
-      <Section className="bg-white">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ce que vous obtenez
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Des bénéfices concrets qui transforment votre quotidien d'entrepreneur
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {benefits.map((benefit) => (
-            <div key={benefit.id} className="text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckIcon />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-              <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
 
       {/* 5. FAQ */}
       <Section className="bg-gray-50">
