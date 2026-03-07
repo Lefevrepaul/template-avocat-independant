@@ -102,7 +102,7 @@ const domainDocuments: Record<string, string[]> = {
     'Contrats commerciaux',
     'Factures et devis',
     'Correspondances commerciales',
-    'Documents comptables si nécessaire'
+    'Documents financiers ou bilans si nécessaire'
   ],
   'droit-immobilier': [
     'Compromis ou promesse de vente',

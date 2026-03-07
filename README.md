@@ -1,6 +1,6 @@
-# Template Site Web - Cabinet d'Expertise-Comptable
+# Template Site Web - Avocat indépendant
 
-Site web template optimisé pour la conversion, développé avec Next.js 14 (App Router), TypeScript et Tailwind CSS.
+Site web template optimisé pour la conversion, développé avec Next.js 14 (App Router), TypeScript et Tailwind CSS. Adapté aux avocats indépendants et cabinets d'avocats.
 
 ## 🚀 Installation
 
@@ -88,9 +88,9 @@ npm start
 ## 📝 Notes
 
 - Tous les textes sont en français et orientés conversion
-- Les CTAs principaux pointent vers "Prendre un RDV gratuit (30 min)"
-- Les CTAs secondaires pointent vers "Demander un devis" ou les pages de services
-- Le design est sobre et premium, adapté à un cabinet d'expertise-comptable
+- Les CTAs principaux pointent vers "Prendre rendez-vous" ou "Prendre un RDV gratuit (30 min)"
+- Les CTAs secondaires pointent vers "Demander un devis" ou les pages domaines / services
+- Le design est sobre et premium, adapté à un cabinet d'avocat
 
 ## 🔧 Technologies utilisées
 

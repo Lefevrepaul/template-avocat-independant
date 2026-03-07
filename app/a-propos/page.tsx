@@ -10,8 +10,8 @@ import Icon from '@/components/Icon';
 import { about, team, faqAbout } from '@/lib/content';
 
 export const metadata: Metadata = {
-  title: 'Le cabinet | Cabinet Expert-Comptable',
-  description: 'Découvrez notre histoire, nos valeurs et notre engagement pour vous accompagner dans la réussite de votre entreprise.',
+  title: 'Le cabinet | Maître Laurent Moreau - Avocat à Lyon',
+  description: 'Découvrez notre cabinet, nos valeurs et notre engagement pour vous conseiller et vous représenter avec rigueur et humanité.',
 };
 
 // Icône SVG Check
@@ -26,20 +26,17 @@ export default function AProposPage() {
     <>
       {/* 1. HERO */}
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center py-20 md:py-28 overflow-hidden">
-        {/* Vidéo de fond */}
+        {/* Image de fond */}
         <div className="absolute inset-0 z-0">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-label="Vidéo de fond"
-          >
-            <source src="/vidéo hero discussion expert comptable.mp4" type="video/mp4" />
-          </video>
-          {/* Overlay blanc pour améliorer la lisibilité */}
-          <div className="absolute inset-0 bg-white/40"></div>
+          <Image
+            src="/images/lyon-background.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-white/70"></div>
         </div>
         
         {/* Contenu */}
@@ -54,7 +51,7 @@ export default function AProposPage() {
             
             {/* Badges confiance */}
             <div className="flex flex-wrap justify-center gap-3 mb-10">
-              <Badge variant="success">Cabinet inscrit à l'Ordre</Badge>
+              <Badge variant="success">Inscrit au Barreau</Badge>
               <Badge variant="info">20 ans d'expérience</Badge>
               <Badge variant="default">Réponse sous 24h</Badge>
               <Badge variant="default">Explications claires</Badge>
@@ -89,7 +86,7 @@ export default function AProposPage() {
             </div>
             <div className="mt-8 p-6 bg-primary-50 rounded-lg border-l-4 border-primary-600">
               <p className="text-xl font-semibold text-gray-900 italic">
-                Notre rôle : traduire vos chiffres en décisions.
+                Notre rôle : vous conseiller et vous représenter avec rigueur et clarté.
               </p>
             </div>
           </div>
@@ -165,7 +162,7 @@ export default function AProposPage() {
                 </li>
                 <li className="flex items-center text-gray-700">
                   <span className="text-red-500 mr-3 flex-shrink-0">•</span>
-                  <span>Une compta rendue 3 mois après</span>
+                  <span>Des dossiers traités avec retard</span>
                 </li>
                 <li className="flex items-center text-gray-700">
                   <span className="text-red-500 mr-3 flex-shrink-0">•</span>
@@ -226,7 +223,7 @@ export default function AProposPage() {
                   Expertise reconnue
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Cabinet inscrit à l'Ordre des experts-comptables avec plus de 20 ans d'expérience dans l'accompagnement d'entreprises de toutes tailles.
+                  Cabinet inscrit au Barreau avec plus de 20 ans d'expérience dans l'accompagnement de particuliers et d'entreprises.
                 </p>
               </div>
             </Card>
@@ -254,7 +251,7 @@ export default function AProposPage() {
                   Conseil stratégique
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Au-delà de la gestion comptable, nous vous apportons des conseils pour optimiser votre fiscalité, améliorer votre rentabilité et faire grandir votre activité.
+                  Au-delà du conseil ponctuel, nous vous accompagnons dans la durée : anticipation des risques, stratégie contentieuse et représentation devant les tribunaux.
                 </p>
               </div>
             </Card>
@@ -379,7 +376,7 @@ export default function AProposPage() {
 
             <div className="bg-primary-50 rounded-lg p-6 border-l-4 border-primary-600">
               <p className="text-gray-800 leading-relaxed">
-                <strong className="text-primary-700">Changer de comptable est possible, on vous guide.</strong> Nous gérons la reprise de votre dossier de A à Z, sans stress ni complication. Vous n'avez qu'à nous donner votre accord, nous nous chargeons du reste.
+                <strong className="text-primary-700">Changer d'avocat est possible, nous vous guidons.</strong> Nous gérons la reprise de votre dossier de A à Z avec votre ancien avocat, sans stress ni complication. Vous n'avez qu'à nous donner votre accord, nous nous chargeons du reste.
               </p>
             </div>
           </div>

@@ -1,14 +1,10 @@
-# Images des services
+# Images des domaines d'intervention
 
-Placez ici les images pour chaque service.
+Placez ici les images pour chaque domaine d'intervention (optionnel).
 
-## Noms de fichiers attendus :
+## Domaines concernés
 
-- `creation.jpg` (ou .png, .webp) - Pour "Création d'entreprise"
-- `comptabilite.jpg` - Pour "Tenue comptable & bilan"
-- `fiscalite.jpg` - Pour "Fiscalité"
-- `social-paie.jpg` - Pour "Social & paie"
-- `conseil-pilotage.jpg` - Pour "Conseil & pilotage"
+Les domaines affichés sur le site sont : Droit du travail, Droit de la famille, Droit pénal, Droit des affaires, Droit immobilier, Droit des étrangers. Vous pouvez ajouter des images personnalisées et mettre à jour le mapping dans `app/services/page.tsx` (getServiceImage).
 
 ## Formats recommandés :
 

@@ -25,12 +25,12 @@ const ArrowIcon = () => (
   </svg>
 );
 
-// Mapping des IDs de spécialisations vers les noms de fichiers d'images
+// Mapping des IDs de spécialisations vers les noms de fichiers d'images (optionnel)
 const getSpecialisationImage = (specialisationId: string): string => {
   const imageMap: Record<string, string> = {
-    'entrepreneurs': 'image chef d\'entreprise.jpg',
-    'liberales': 'image professions libérales.jpg',
-    'pme': 'image pme.jpg',
+    'particuliers': '',
+    'professionnels': '',
+    'urgences': '',
   };
   return imageMap[specialisationId] || '';
 };
@@ -81,35 +81,32 @@ export default function SpecialisationsPage() {
     <>
       {/* 1. HERO */}
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center py-20 md:py-28 overflow-hidden">
-        {/* Vidéo de fond */}
+        {/* Image de fond */}
         <div className="absolute inset-0 z-0">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-label="Vidéo de fond"
-          >
-            <source src="/vidéo hero discussion expert comptable.mp4" type="video/mp4" />
-          </video>
-          {/* Overlay blanc pour améliorer la lisibilité */}
-          <div className="absolute inset-0 bg-white/40"></div>
+          <Image
+            src="/images/lyon-background.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-white/70"></div>
         </div>
         
         {/* Contenu */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Un expert-comptable adapté à votre réalité
+              Un avocat adapté à votre situation
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              Entrepreneurs, indépendants, professions libérales et PME : un accompagnement clair, réactif et orienté pilotage.
+              Particuliers, professionnels et entreprises : conseil, représentation et accompagnement clair et réactif.
             </p>
             
             {/* Badges de confiance */}
             <div className="flex flex-wrap justify-center gap-3 mb-10">
-              <Badge variant="success">Cabinet inscrit à l'Ordre</Badge>
+              <Badge variant="success">Inscrit au Barreau</Badge>
               <Badge variant="info">20 ans d'expérience</Badge>
               <Badge variant="default">Réponse sous 24h</Badge>
               <Badge variant="default">Explications claires</Badge>
@@ -297,7 +294,7 @@ export default function SpecialisationsPage() {
       <Section className="bg-white">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Comment on travaille ensemble
+            Comment nous travaillons ensemble
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-8">
@@ -305,33 +302,33 @@ export default function SpecialisationsPage() {
             <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
               1
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Diagnostic</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Écoute & Analyse</h3>
             <p className="text-gray-700 leading-relaxed">
-              Nous analysons votre situation actuelle, vos besoins et vos objectifs pour vous proposer un accompagnement sur mesure.
+              Nous analysons votre situation, vos objectifs et vos documents pour vous proposer un accompagnement adapté à votre dossier.
             </p>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
               2
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Mise en place</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Stratégie</h3>
             <p className="text-gray-700 leading-relaxed">
-              Nous paramétrons vos outils, organisons la collecte de vos documents et mettons en place un suivi régulier.
+              Nous définissons ensemble la stratégie : conseil, négociation amiable, médiation ou représentation devant les tribunaux.
             </p>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
               3
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Pilotage & Optimisation</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Suivi & Représentation</h3>
             <p className="text-gray-700 leading-relaxed">
-              Nous vous fournissons des tableaux de bord mensuels et identifions les opportunités d'optimisation.
+              Nous vous accompagnons tout au long de la procédure avec un suivi régulier, des mises à jour claires et une disponibilité pour vos questions.
             </p>
           </div>
         </div>
         <div className="text-center">
           <p className="text-xl text-gray-700 font-medium italic">
-            Vous savez où vous en êtes, sans y passer vos soirées.
+            Vous savez où vous en êtes à chaque étape.
           </p>
         </div>
       </Section>
@@ -365,7 +362,7 @@ export default function SpecialisationsPage() {
             Questions fréquentes
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Tout ce que vous devez savoir avant de nous confier votre comptabilité
+            Tout ce que vous devez savoir avant de nous confier votre dossier
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -394,7 +391,7 @@ export default function SpecialisationsPage() {
               Faisons le point en 30 minutes
             </h2>
             <p className="text-xl mb-8 text-primary-50 leading-relaxed">
-              Entrepreneurs, indépendants, professions libérales ou PME : découvrez comment nous pouvons vous accompagner selon votre profil.
+              Particuliers, professionnels ou entreprises : découvrez comment nous pouvons vous accompagner selon votre situation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CTAButton href="https://calendly.com/votre-calendly" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 border-white" target="_blank" rel="noopener noreferrer">

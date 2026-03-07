@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nos Services | Cabinet Expert-Comptable',
-  description: 'Services d\'expertise-comptable complets : création d\'entreprise, comptabilité, fiscalité, social & paie, conseil & pilotage. Prenez rendez-vous gratuitement.',
+  title: 'Nos domaines d\'intervention | Maître Laurent Moreau - Avocat à Lyon',
+  description: 'Conseil et représentation en droit du travail, droit de la famille, droit pénal, droit des affaires, droit immobilier et droit des étrangers. Prenez rendez-vous.',
 };
 
 export default function ServicesLayout({

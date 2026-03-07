@@ -188,90 +188,90 @@ export const domains: Domain[] = [
 
 export const specialisations: Specialisation[] = [
   {
-    id: 'entrepreneurs',
-    title: 'Entrepreneurs & Indépendants',
-    tagline: 'Gagnez du temps, évitez les erreurs, optimisez légalement',
+    id: 'particuliers',
+    title: 'Particuliers',
+    tagline: 'Conseil, écoute et accompagnement pour vos démarches personnelles',
     pains: [
-      'L\'administratif vous prend trop de temps et vous éloigne de votre activité',
-      'Vous n\'êtes pas sûr de respecter toutes vos obligations légales',
-      'Vous payez peut-être trop d\'impôts sans le savoir',
-      'Vous manquez de visibilité sur la santé financière de votre activité'
+      'Vous êtes confronté à une situation juridique (divorce, succession, litige) et vous vous sentez démuni',
+      'Vous ne savez pas quels sont vos droits ni comment les faire valoir',
+      'Les procédures vous semblent complexes et les délais flous',
+      'Vous craignez de prendre de mauvaises décisions par manque d\'information'
     ],
     outcomes: [
-      'Toute votre comptabilité gérée dans les temps, sans stress',
-      'Optimisation fiscale légale pour réduire vos charges',
-      'Tableaux de bord simples pour suivre votre activité',
-      'Conseils personnalisés pour faire grandir votre business'
+      'Une écoute attentive et des explications claires sur vos droits et options',
+      'Un accompagnement à chaque étape (conseil, négociation, représentation)',
+      'Une stratégie adaptée à votre situation et à vos objectifs',
+      'Une sérénité retrouvée grâce à un interlocuteur dédié'
     ],
     included: [
-      'Tenue de comptabilité complète et déclarations fiscales',
-      'Optimisation fiscale légale et conseils personnalisés',
-      'Tableaux de bord mensuels clairs et accessibles'
+      'Premier entretien pour analyser votre situation et vos besoins',
+      'Conseil personnalisé et stratégie adaptée à votre dossier',
+      'Représentation et accompagnement jusqu\'à la résolution du litige'
     ],
     mistakes: [
-      'Ne pas déclarer certaines charges déductibles (ex: frais kilométriques, repas)',
-      'Choisir le mauvais statut juridique et payer plus d\'impôts que nécessaire',
-      'Ne pas anticiper les échéances fiscales et se retrouver avec des surprises'
+      'Attendre la dernière minute avant de consulter un avocat et perdre des options',
+      'Signer des documents ou accepter des accords sans faire relire par un avocat',
+      'Ne pas rassembler les preuves et documents utiles dès le début'
     ],
-    proofLine: 'Point de suivi mensuel + tableau de bord simple, compréhensible en 10 minutes.',
+    proofLine: 'Un interlocuteur unique, des réponses sous 24h et des honoraires transparents dès le premier échange.',
     ctaText: 'Prendre un RDV gratuit (30 min)'
   },
   {
-    id: 'liberales',
-    title: 'Professions libérales',
-    tagline: 'Revenus irréguliers, impôts maîtrisés, sérénité retrouvée',
+    id: 'professionnels',
+    title: 'Professionnels & Entreprises',
+    tagline: 'Sécurisez vos contrats, anticipez les risques, pilotez sereinement',
     pains: [
-      'Vos revenus varient d\'un mois sur l\'autre, difficile d\'anticiper vos impôts',
-      'Vous ne savez pas comment optimiser votre protection sociale',
-      'La gestion des honoraires et des déclarations vous prend du temps',
-      'Vous vous inquiétez de ne pas respecter les obligations déontologiques'
+      'Vos contrats commerciaux ou de travail vous exposent à des risques mal identifiés',
+      'Un litige avec un partenaire, un salarié ou un client vous inquiète',
+      'Vous créez ou restructurez votre entreprise et les choix juridiques sont complexes',
+      'Vous manquez de temps et de visibilité pour anticiper les contentieux'
     ],
     outcomes: [
-      'Anticipation de vos impôts et charges sociales, plus de surprises',
-      'Optimisation de votre protection sociale et de votre retraite',
-      'Gestion simplifiée de vos honoraires et déclarations',
-      'Conformité garantie avec les obligations de votre profession'
+      'Contrats sécurisés et clauses adaptées à votre activité',
+      'Conseil en amont pour limiter les risques et les litiges',
+      'Représentation efficace en cas de contentieux (commercial, social, pénal)',
+      'Un partenaire juridique réactif pour vos décisions importantes'
     ],
     included: [
-      'Gestion comptable adaptée aux revenus irréguliers',
-      'Conseil en optimisation sociale et fiscale pour professions libérales',
-      'Accompagnement sur les spécificités déontologiques de votre métier'
+      'Audit et rédaction ou révision de contrats (commerciaux, travail, partenariats)',
+      'Conseil en création d\'entreprise, statuts et montages juridiques',
+      'Accompagnement contentieux et représentation devant les tribunaux'
     ],
     mistakes: [
-      'Ne pas provisionner suffisamment pour les impôts et se retrouver en difficulté',
-      'Choisir le mauvais régime de protection sociale (RSI, CIPAV, etc.)',
-      'Ne pas déclarer correctement les charges professionnelles déductibles'
+      'Signer des contrats sans les faire relire et découvrir des clauses déséquilibrées',
+      'Négliger les obligations sociales ou fiscales et s\'exposer à des sanctions',
+      'Gérer un litige seul alors qu\'un avocat aurait pu éviter l\'escalade'
     ],
-    proofLine: 'Prévisions fiscales trimestrielles + suivi de trésorerie adapté à vos revenus variables.',
+    proofLine: 'Réactivité sous 24h, honoraires prévisibles et suivi personnalisé pour vos dossiers.',
     ctaText: 'Prendre un RDV gratuit (30 min)'
   },
   {
-    id: 'pme',
-    title: 'PME',
-    tagline: 'Pilotage précis, structuration solide, croissance maîtrisée',
+    id: 'urgences',
+    title: 'Urgences & Contentieux',
+    tagline: 'Réactivité, stratégie de défense et accompagnement jusqu\'au bout',
     pains: [
-      'Vous pilotez à l\'aveugle sans indicateurs clairs sur votre marge et trésorerie',
-      'La gestion de la paie et du social devient complexe avec plusieurs salariés',
-      'Vous avez du mal à structurer vos processus et à anticiper les obligations',
-      'Vous manquez de temps pour les décisions stratégiques importantes'
+      'Vous êtes convoqué, mis en examen ou confronté à une procédure urgente',
+      'Un conflit dégénère et vous avez besoin d\'être représenté rapidement',
+      'Une décision de justice ou administrative vous affecte et vous voulez agir',
+      'Vous ne savez pas quels délais respecter ni quelles démarches entreprendre'
     ],
     outcomes: [
-      'Tableaux de bord de pilotage clairs (marge, trésorerie, rentabilité)',
-      'Gestion complète de la paie et des déclarations sociales automatisée',
-      'Structuration de vos processus comptables et administratifs',
-      'Accompagnement stratégique pour vos décisions importantes'
+      'Une prise en charge rapide pour sécuriser vos droits et vos options',
+      'Une stratégie de défense ou d\'action adaptée à votre situation',
+      'Une représentation devant les tribunaux ou les autorités',
+      'Un suivi clair à chaque étape de la procédure'
     ],
     included: [
-      'Comptabilité complète, bilan et compte de résultat',
-      'Gestion de la paie et déclarations sociales (DSN, URSSAF)',
-      'Tableaux de bord de pilotage et conseil stratégique mensuel'
+      'Assistance lors des auditions, gardes à vue et convocations',
+      'Préparation du dossier, constitution de partie civile ou défense',
+      'Représentation devant les juridictions (civile, pénale, administrative)'
     ],
     mistakes: [
-      'Ne pas suivre régulièrement la trésorerie et se retrouver en difficulté de paiement',
-      'Mal gérer les déclarations sociales et avoir des pénalités de retard',
-      'Prendre des décisions importantes sans analyser l\'impact financier'
+      'Parler aux autorités ou signer des documents sans avoir consulté un avocat',
+      'Laisser passer les délais de recours et perdre des droits',
+      'Sous-estimer la gravité d\'une procédure et ne pas se faire accompagner'
     ],
-    proofLine: 'Réunion de pilotage mensuelle + tableau de bord trésorerie en temps réel.',
+    proofLine: 'Disponibilité pour les urgences, explications à chaque étape et engagement sur les délais de réponse.',
     ctaText: 'Prendre un RDV gratuit (30 min)'
   }
 ];
@@ -279,49 +279,49 @@ export const specialisations: Specialisation[] = [
 export const miniTestimonials: MiniTestimonial[] = [
   {
     id: '1',
-    quote: 'Depuis que je travaille avec eux, j\'ai retrouvé ma sérénité. Plus de stress avec les déclarations.',
+    quote: 'Un accompagnement clair et rassurant. J\'ai compris mes options et j\'ai pu prendre une décision en toute sérénité.',
     name: 'Nadia',
-    role: 'Infirmière libérale'
+    role: 'Particulière'
   },
   {
     id: '2',
-    quote: 'Les tableaux de bord mensuels me permettent de piloter mon activité en toute tranquillité.',
+    quote: 'Réactivité et professionnalisme. Mon dossier a été traité avec rigueur et des explications à chaque étape.',
     name: 'Thomas',
-    role: 'Artisan'
+    role: 'Chef d\'entreprise'
   },
   {
     id: '3',
-    quote: 'Un accompagnement professionnel qui nous fait économiser plusieurs milliers d\'euros par an.',
+    quote: 'Une écoute attentive et des conseils adaptés à ma situation. Je me suis senti accompagné jusqu\'au bout.',
     name: 'Sofia',
-    role: 'Gérante de PME'
+    role: 'Particulière'
   }
 ];
 
 export const faqSpecialisations: FAQSpecialisation[] = [
   {
     id: '1',
-    question: 'Prenez-vous les auto-entrepreneurs ?',
-    answer: 'Oui, nous accompagnons les auto-entrepreneurs pour leurs déclarations et leur optimisation fiscale. Nous les aidons aussi à évoluer vers un statut plus adapté quand leur activité grandit.'
+    question: 'Comment sont calculés vos honoraires ?',
+    answer: 'Les honoraires dépendent de la nature et de la complexité du dossier. Nous vous proposons un devis personnalisé lors du premier échange (gratuit et sans engagement). Nous travaillons au forfait quand c\'est possible, ou à l\'heure selon le type de mission.'
   },
   {
     id: '2',
     question: 'Travaillez-vous à distance ?',
-    answer: 'Oui, nous travaillons principalement à distance via notre espace client sécurisé. Vous envoyez vos documents en ligne et nous les traitons. Des rendez-vous en visio ou au cabinet sont possibles selon vos préférences.'
+    answer: 'Oui. Nous proposons des rendez-vous en visioconférence pour votre commodité. Des rendez-vous au cabinet sont également possibles selon vos préférences. Les échanges et documents peuvent se faire de manière sécurisée en ligne.'
   },
   {
     id: '3',
-    question: 'Je suis en retard, vous pouvez reprendre ?',
-    answer: 'Oui, nous pouvons reprendre votre comptabilité à tout moment, même si vous êtes en retard. Nous nous chargeons de régulariser la situation et de mettre à jour vos déclarations. Pas de jugement, juste des solutions.'
+    question: 'Puis-je vous confier mon dossier alors qu\'un autre avocat m\'accompagne déjà ?',
+    answer: 'Oui. Changer d\'avocat en cours de procédure est possible. Nous gérons la passation avec votre ancien avocat (récupération du dossier, respect des règles déontologiques) pour assurer une transition en douceur. Vous n\'avez qu\'à nous donner votre accord.'
   },
   {
     id: '4',
-    question: 'Vous m\'aidez à choisir mon statut ?',
-    answer: 'Absolument. Lors d\'un rendez-vous de diagnostic, nous analysons votre situation et vos objectifs pour vous conseiller le statut juridique le plus adapté (SAS, SARL, EURL, etc.).'
+    question: 'Sous quel délai répondez-vous ?',
+    answer: 'Nous nous engageons à répondre sous 24h ouvrées. Pour les urgences (garde à vue, convocation, délais de recours), nous privilégions la réactivité. Votre sérénité est notre priorité.'
   },
   {
     id: '5',
-    question: 'Faites-vous du conseil, ou seulement la compta ?',
-    answer: 'Nous faisons les deux. Au-delà de la gestion comptable, nous vous apportons des conseils stratégiques : optimisation fiscale, pilotage de trésorerie, choix de statut, décisions importantes. Vous avez un vrai partenaire, pas juste un prestataire.'
+    question: 'Faites-vous du conseil uniquement, ou aussi de la représentation ?',
+    answer: 'Les deux. Nous vous conseillons en amont pour anticiper les risques et prendre les bonnes décisions. En cas de litige ou de procédure, nous vous représentons devant les tribunaux et les autorités. Vous avez un interlocuteur unique pour tout le suivi de votre dossier.'
   }
 ];
 

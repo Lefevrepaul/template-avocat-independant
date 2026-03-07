@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pour qui ? | Cabinet Expert-Comptable',
-  description: 'Un expert-comptable adapté à votre réalité : entrepreneurs, indépendants, professions libérales et PME. Accompagnement clair, réactif et orienté pilotage.',
+  title: 'Pour qui ? | Maître Laurent Moreau - Avocat à Lyon',
+  description: 'Un avocat adapté à votre situation : particuliers, professionnels et entreprises. Conseil, représentation et accompagnement clair et réactif.',
 };
 
 export default function SpecialisationsLayout({

@@ -18,14 +18,15 @@ const CheckIcon = () => (
   </svg>
 );
 
-// Mapping des IDs de services vers les noms de fichiers d'images
+// Mapping des IDs de domaines vers les noms de fichiers d'images (optionnel)
 const getServiceImage = (serviceId: string): string => {
   const imageMap: Record<string, string> = {
-    'creation': 'image création d\'entreprise.jpg',
-    'comptabilite': 'images comptabilité.jpg',
-    'fiscalite': 'image fiscalité.jpg',
-    'social-paie': 'image salaire.jpg',
-    'conseil-pilotage': 'image conseil.jpg',
+    'droit-du-travail': '',
+    'droit-de-la-famille': '',
+    'droit-penal': '',
+    'droit-des-affaires': '',
+    'droit-immobilier': '',
+    'droit-des-etrangers': '',
   };
   return imageMap[serviceId] || '';
 };
@@ -79,39 +80,36 @@ export default function ServicesPage() {
     <>
       {/* 1. HERO */}
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center py-20 md:py-28 overflow-hidden">
-        {/* Vidéo de fond */}
+        {/* Image de fond */}
         <div className="absolute inset-0 z-0">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-label="Vidéo de fond"
-          >
-            <source src="/vidéo hero discussion expert comptable.mp4" type="video/mp4" />
-          </video>
-          {/* Overlay blanc pour améliorer la lisibilité */}
-          <div className="absolute inset-0 bg-white/40"></div>
+          <Image
+            src="/images/lyon-background.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-white/70"></div>
         </div>
         
         {/* Contenu */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Gagnez du temps, optimisez vos impôts, pilotez sereinement
+              Conseil, représentation et sérénité
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              Comptabilité, fiscalité, social & paie pour entrepreneurs, indépendants et PME. 
-              Un accompagnement sur mesure avec des outils simples et une équipe réactive.
+              Droit du travail, droit de la famille, droit pénal, droit des affaires, droit immobilier et droit des étrangers. 
+              Un accompagnement sur mesure avec clarté et réactivité.
             </p>
             
             {/* Badges de confiance */}
             <div className="flex flex-wrap justify-center gap-3 mb-10">
-              <Badge variant="success">Cabinet inscrit à l'Ordre</Badge>
+              <Badge variant="success">Inscrit au Barreau</Badge>
               <Badge variant="info">20 ans d'expérience</Badge>
               <Badge variant="default">Réponse sous 24h</Badge>
-              <Badge variant="default">Outils simples</Badge>
+              <Badge variant="default">Explications claires</Badge>
             </div>
 
             {/* CTAs */}
@@ -273,7 +271,7 @@ export default function ServicesPage() {
             Questions fréquentes
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Tout ce que vous devez savoir avant de nous confier votre comptabilité
+            Tout ce que vous devez savoir avant de nous confier votre dossier
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -299,11 +297,11 @@ export default function ServicesPage() {
         <Container>
           <div className="relative z-10 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Prêt à retrouver votre sérénité ?
+              Prêt à vous faire accompagner ?
             </h2>
             <p className="text-xl mb-8 text-primary-50 leading-relaxed">
-              Rejoignez les centaines d'entrepreneurs qui nous font confiance pour gérer leur comptabilité, 
-              optimiser leur fiscalité et piloter leur activité en toute tranquillité.
+              Particuliers et professionnels nous font confiance pour les conseiller, les représenter 
+              et les accompagner dans leurs démarches juridiques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CTAButton href="https://calendly.com/votre-calendly" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 border-white" target="_blank" rel="noopener noreferrer">
