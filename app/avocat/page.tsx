@@ -19,7 +19,7 @@ export default function AvocatPage() {
         {/* Image de fond Lyon */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/lyon-background.jpg"
+            src="/images/Lille-background.jpg"
             alt="Lyon"
             fill
             className="object-cover"
@@ -35,7 +35,7 @@ export default function AvocatPage() {
               <div className="flex-shrink-0">
                 <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-lg overflow-hidden shadow-lg border-4 border-white">
                   <Image
-                    src="/images/team/image portrait pro homme.jpg"
+                    src="/images/Portrait avocat.jpg"
                     alt="Maître Laurent Moreau"
                     fill
                     className="object-cover"
@@ -236,7 +236,7 @@ export default function AvocatPage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/contact-background.jpg"
+            src="/images/Lille-background.jpg"
             alt=""
             fill
             className="object-cover"

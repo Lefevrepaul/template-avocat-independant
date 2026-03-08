@@ -19,7 +19,7 @@ export default function MethodePage() {
         {/* Image de fond Lyon */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/lyon-background.jpg"
+            src="/images/Lille-background.jpg"
             alt="Lyon"
             fill
             className="object-cover"
@@ -102,7 +102,7 @@ export default function MethodePage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/contact-background.jpg"
+            src="/images/Lille-background.jpg"
             alt=""
             fill
             className="object-cover"

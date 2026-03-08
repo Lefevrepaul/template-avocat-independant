@@ -513,28 +513,26 @@ export const team: TeamMember[] = [
     role: 'Avocat associé',
     bio: 'Diplômé et inscrit au Barreau, j\'accompagne les entreprises et les particuliers depuis plus de 20 ans dans leurs démarches juridiques. Ma mission : vous conseiller, vous représenter et vous donner les clés pour prendre les bonnes décisions juridiques. Au-delà de la représentation, je vous apporte mon expertise pour vous conseiller dans vos décisions stratégiques.',
     focusAreas: ['Droit des affaires', 'Conseil juridique', 'Contentieux commercial', 'Droit social'],
-    imagePath: '/images/team/image portrait pro homme.jpg'
+    imagePath: '/images/Portrait avocat.jpg'
   },
   {
     name: 'Sophie Martin',
     role: 'Avocate - Droit social',
     bio: 'Spécialisée dans le droit social et du travail, je m\'assure que toutes vos relations de travail sont conformes et sécurisées. Mon objectif : vous simplifier la gestion juridique de vos salariés et vous éviter les litiges coûteux. Je vous accompagne aussi dans vos questions de droit du travail et de conventions collectives.',
     focusAreas: ['Droit du travail', 'Relations sociales', 'Contentieux prud\'homal', 'Conventions collectives'],
-    imagePath: '/images/team/image portrait pro femme.jpg'
   },
   {
     name: 'Thomas Bernard',
     role: 'Avocat - Droit pénal',
     bio: 'Expert en droit pénal, je vous accompagne dans les procédures pénales avec rigueur et détermination. Je vous conseille et vous représente devant les tribunaux pour défendre vos intérêts. Mon approche : vous expliquer clairement chaque étape de la procédure et vous accompagner avec professionnalisme.',
     focusAreas: ['Droit pénal', 'Défense pénale', 'Procédures pénales', 'Conseil juridique'],
-    imagePath: '/images/team/image portrait pro homme fiscaliste.jpg'
+    imagePath: '/images/Portrait avocat.jpg'
   },
   {
     name: 'Julie Lefebvre',
     role: 'Avocate - Droit de la famille',
     bio: 'Spécialisée dans le droit de la famille, j\'accompagne les particuliers dans les moments difficiles avec bienveillance et professionnalisme. Je vous conseille et vous représente dans les procédures de divorce, de succession et de protection des personnes. Mon rôle : vous accompagner avec humanité.',
     focusAreas: ['Droit de la famille', 'Divorce', 'Succession', 'Protection des personnes'],
-    imagePath: '/images/team/image portrait pro femme assistante.jpg'
   }
 ];
 

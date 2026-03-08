@@ -29,7 +29,7 @@ export default function AProposPage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/lyon-background.jpg"
+            src="/images/Lille-background.jpg"
             alt=""
             fill
             className="object-cover"
@@ -436,7 +436,7 @@ export default function AProposPage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/image background contact bureau.jpg"
+            src="/images/Lille-background.jpg"
             alt=""
             fill
             className="object-cover"

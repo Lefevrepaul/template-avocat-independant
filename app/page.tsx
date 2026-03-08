@@ -21,7 +21,7 @@ export default function HomePage() {
         {/* Image de fond Lyon */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/lyon-background.jpg"
+            src="/images/Lille-background.jpg"
             alt="Lyon"
             fill
             className="object-cover"
@@ -67,7 +67,7 @@ export default function HomePage() {
               <div className="md:col-span-2">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
                   <Image
-                    src="/images/team/image portrait pro homme.jpg"
+                    src="/images/Portrait avocat.jpg"
                     alt="Maître Laurent Moreau"
                     fill
                     className="object-cover"
@@ -212,7 +212,7 @@ export default function HomePage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/contact-background.jpg"
+            src="/images/Lille-background.jpg"
             alt=""
             fill
             className="object-cover"

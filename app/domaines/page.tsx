@@ -170,7 +170,7 @@ export default function DomainesPage() {
         {/* Image de fond Lyon */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/lyon-background.jpg"
+            src="/images/Lille-background.jpg"
             alt="Lyon"
             fill
             className="object-cover"
