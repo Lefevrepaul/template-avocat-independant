@@ -84,7 +84,7 @@ export default function SpecialisationsPage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/Lille-background.jpg"
+            src="/images/lille-background.jpg"
             alt=""
             fill
             className="object-cover"
@@ -375,7 +375,7 @@ export default function SpecialisationsPage() {
         {/* Image de fond */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/Lille-background.jpg"
+            src="/images/lille-background.jpg"
             alt=""
             fill
             className="object-cover"
